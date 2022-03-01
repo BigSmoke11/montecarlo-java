@@ -45,7 +45,7 @@ public class Pie
 		int[] trials = new int[10];	
 		Scanner scan = new Scanner(System.in);
 		System.out.println("This is the Monte Carlo Method for Finding PI");
-		//Ask user to try with different amount of darts in iterations, maximum 10, do not go over 200000 because processing gets slow
+		//Ask user to try with different amount of darts in iterations, maximum 10, 
 		
 		System.out.println("Please enter amount of trials (max 10)");
 		int times = scan.nextInt();
@@ -53,6 +53,7 @@ public class Pie
 		System.out.println("Invalid amount, Please try again");
 		else
 		{
+			//Please do not go over 2000000 for an individual trial because processing gets a bit slow
 			for(int i = 0; i < times; i++)
 			{	
 				System.out.println("Please enter Trial " +(i+1));
